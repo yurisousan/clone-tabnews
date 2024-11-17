@@ -1,6 +1,8 @@
 # clone-tabnews
 Implementacao do tabnews para o curso.dev
 
+[Site](https://clone-tabnews-eight-blue.vercel.app/)
+
 # Requirements
 - `nvm install`
 
