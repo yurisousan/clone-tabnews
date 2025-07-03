@@ -21,11 +21,14 @@ Implementacao do tabnews para o curso.dev
 
 # Start database
 ```bash
-docker compose up
+docker compose -f infra/compose.yaml up
 
 #using a client to connect to container database
 psql --host=localhost --username=postgres --port=5342 --dbname=postgres
 
 # if have any changes in the config run:
-docker compose up -d --force-recreate
+docker compose -f infra/compose.yaml up -d --force-recreate
+
+# to delete all
+docker compose -f infra/compose.yaml down
 ```
