@@ -18,3 +18,14 @@ Implementacao do tabnews para o curso.dev
 - `npm install next@13.1.6`
 - `npm install react@18.2.0`
 - `npm install react-dom@18.2.0`
+
+# Start database
+```bash
+docker compose up
+
+#using a client to connect to container database
+psql --host=localhost --username=postgres --port=5342 --dbname=postgres
+
+# if have any changes in the config run:
+docker compose up -d --force-recreate
+```
