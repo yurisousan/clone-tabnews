@@ -24,6 +24,10 @@ Implementacao do tabnews para o curso.dev
 docker compose -f infra/compose.yaml up
 
 #using a client to connect to container database
+brew doctor
+brew update
+brew install libpq
+brew link --force libpq
 psql --host=localhost --username=postgres --port=5342 --dbname=postgres
 
 # if have any changes in the config run:
