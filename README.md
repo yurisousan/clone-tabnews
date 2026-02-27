@@ -19,6 +19,10 @@ Implementacao do tabnews para o curso.dev
 - `npm install react@18.2.0`
 - `npm install react-dom@18.2.0`
 
+# Run tests
+- `npm run dev`
+- `npm run test:watch`
+
 # Start database
 ```bash
 docker compose -f infra/compose.yaml up
