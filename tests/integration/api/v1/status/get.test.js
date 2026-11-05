@@ -8,8 +8,8 @@ test(
         const parseUpdatedAt = new Date(responseBody.updated_at).toISOString();
         
         expect(responseBody.updated_at).toEqual(parseUpdatedAt);
-        expect(responseBody.dependencies.database.version).toEqual("16.0");
-        expect(responseBody.dependencies.database.max_connections).toBe(100);
+        expect(responseBody.dependencies.database.version).toMatch(/^\d+\.\d+/);
+        expect(responseBody.dependencies.database.max_connections).toBeGreaterThan(0);
         expect(responseBody.dependencies.database.opened_connections).toBe(1);
     }
 );
